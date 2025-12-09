@@ -1,6 +1,7 @@
 :root {
   --font-primary: 'Work Sans', Arial, sans-serif;
   --font-secondary: 'Moulpali', 'Sacramento', Arial, serif;
+  --gold-color: #C78A2C;
 }
 
 
@@ -129,6 +130,10 @@ html[data-bs-theme="light"] .bg-overlay-auto {
     font-family: var(--font-secondary) !important;
 }
 
+.gold-text-color {
+    color: var(--gold-color);
+}
+
 @keyframes waviy {
   0%,40%,100% {
     transform: translateY(0)
@@ -149,7 +154,7 @@ html[data-bs-theme="light"] .bg-overlay-auto {
   font-family: 'Moulpali';
   position: relative;
   display: inline-block;
-  color: #f14e95;
+  color: #C78A2C;
   font-size: 28px;
   text-transform: uppercase;
   animation: waviy 2s infinite;

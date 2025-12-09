@@ -76,26 +76,6 @@
     <script src="./dist/guest.js"></script>
 </head>
 
-<!-- Jika tidak menggunakan komentar, hapus atribut data-key dan data-url, serta abaikan file dashboard.html. -->
-<!-- If you're not using comments, remove the data-key and data-url attributes, and ignore dashboard.html. -->
-
-<!-- Jika tidak menggunakan lagu, hapus atribut data-audio. -->
-<!-- If you're not using a song, remove the data-audio attribute. -->
-
-<!-- Ubah atribut time menjadi time-data (mengikuti format yang ditentukan). -->
-<!-- Change the time attribute to time-data (follow the required format). -->
-
-<!-- Atur data-confetti ke 'false' jika tidak ingin menggunakan konfeti. Hanya berfungsi saat komentar dimatikan. -->
-<!-- Set data-confetti to 'false' if you don't want confetti. Only works when comments are disabled. -->
-
-<!-- Kamu bisa langsung gunakan file rilis GitHub (guest.css, guest.js, admin.css, admin.js) tanpa perlu build. -->
-<!-- You can use GitHub release files (guest.css, guest.js, admin.css, admin.js) directly without compiling. -->
-
-<!-- Disarankan menggunakan 'data-src' pada tag <img> -->
-<!-- It's recommended to use 'data-src' in the <img> tag -->
-
-<!-- <html lang="id" data-bs-theme="auto"> ['auto', 'dark', 'light'] -->
-
 <body data-audio="./assets/music/background-sound.mp3" data-confetti="true" data-time="2026-01-31 05:30:00">
 
     <!-- Root Invitation -->
@@ -150,7 +130,8 @@
                             onclick="undangan.guest.modal(this)"
                             class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer">
 
-                        <h2 class=" my-4" style="font-size: 2.25rem;">TOLA &amp; PHINH</h2>
+                        <!-- <h2 class=" my-4" style="font-size: 2.25rem;">TOLA &amp; PHINH</h2> -->
+                        <img src="./assets/images/mine/name.svg" class="img-fluid mb-4 d-block mx-auto" style="width: 18rem;" alt="Name logo">
 
                         <div id="name_fram" class="ifram-name">
                             <img class="image-iframe-wedding" style="    background: #995f7b5c;"
@@ -163,19 +144,19 @@
                             <div class="row justify-content-center">
                                 <div class="col-3 p-1">
                                     <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="day">0</p><small
-                                        class="ms-1 me-0 my-0 p-0 d-inline">Day</small>
+                                        class="ms-1 me-0 my-0 p-0 d-inline">ថ្ងៃ</small>
                                 </div>
                                 <div class="col-3 p-1">
                                     <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="hour">0</p><small
-                                        class="ms-1 me-0 my-0 p-0 d-inline">Hour</small>
+                                        class="ms-1 me-0 my-0 p-0 d-inline">ម៉ោង</small>
                                 </div>
                                 <div class="col-3 p-1">
                                     <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="minute">0</p><small
-                                        class="ms-1 me-0 my-0 p-0 d-inline">Minute</small>
+                                        class="ms-1 me-0 my-0 p-0 d-inline">នាទី</small>
                                 </div>
                                 <div class="col-3 p-1">
                                     <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="second">0</p><small
-                                        class="ms-1 me-0 my-0 p-0 d-inline">Second</small>
+                                        class="ms-1 me-0 my-0 p-0 d-inline">វិនាទី</small>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +212,7 @@
                                 <img src="./assets/images/placeholder.webp" data-src="./assets/images/mine/groom.webp"
                                     alt="cowo"
                                     class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer">
-                                <h2 class=" m-0" style="font-size: 2.125rem;">ទួច តុលា</h2>
+                                <h2 class=" m-0" style="font-size: 2.125rem;">ទូច តុលា</h2>
                             </div>
 
                             <!-- Love animation -->
@@ -287,8 +268,7 @@
 
                 <!-- event section -->
                 <section class="bg-light-dark pt-2 pb-4" id="event">
-                    <div id="fh5co-event" class="fh5co-bg"
-                        style="background-image:url(images/myphoto/angkor/1.1.jpg);background-repeat: no-repeat; background-size: cover; background-position: center;">
+                    <div id="fh5co-event" class="fh5co-bg">
                         <div class="overlay"></div>
                         <div class="container">
                             <div class="row justify-content-center">
@@ -320,30 +300,26 @@
                                                 <div class="col-md-12 col-sm-12 text-center">
                                                     <div
                                                         class=" event-wrap animate-box justify-content-center align-items-center">
-                                                        <h3>ថ្ងៃសុក្រ ទី៣០ ខែមករា ឆ្នាំ២០២៦
+                                                        <h3 style="font-weight: bold;">ថ្ងៃសុក្រ ទី៣០ ខែមករា ឆ្នាំ២០២៦
                                                         </h3>
 
                                                         <div class="event-schedule">
                                                             <div class="event-col times" style="text-align: left;">
-                                                                <span>⊳ ម៉ោង ០៧:០០ ព្រឹក</span>
-                                                                <span>⊳ ម៉ោង ០៨:០០ ព្រឹក</span>
-                                                                <span>⊳ ម៉ោង ០៨:៣០ ព្រឹក</span>
-                                                                <span>⊳ ម៉ោង ០៩:០០ ព្រឹក</span>
-                                                                <span>⊳ ម៉ោង ១០:០០ ព្រឹក</span>
-                                                                <span>⊳ ម៉ោង ១១:០០ ថ្ងៃត្រង់</span>
-                                                                <span>⊳ ម៉ោង ១១:៣០ ថ្ងៃត្រង់</span>
-                                                                <span>⊳ ម៉ោង ១២:០០ ថ្ងៃត្រង់</span>
+                                                                <span>⊳ ម៉ោង ០៧:៣០ ព្រឹក</span>
+                                                                <span>⊳ ម៉ោង ០៩:៣០ ព្រឹក</span>
+                                                                <span>⊳ ម៉ោង ០១:៣០ រសៀល</span>
+                                                                <span>⊳ ម៉ោង ០២:១៥ រសៀល</span>
+                                                                <span>⊳ ម៉ោង ០៤:៣០ រសៀល</span>
+                                                                <span>⊳ ម៉ោង ០៦:៣០ ល្ងាច</span>
                                                             </div>
 
                                                             <div class="event-col events" style="text-align: left;">
-                                                                <span>ពិធីហែជំនូន</span>
-                                                                <span>ពិធីបំពាក់ចិញ្ចៀន</span>
-                                                                <span>ពិធីជាវខាន់ស្លា</span>
-                                                                <span>ពិធីប៉ាយកុងម៉ា</span>
+                                                                <span>ពិធីហែជំនូន </span>
+                                                                <span>ពិធីពិសាស្លា បំពាក់ចិញ្ចៀន</span>
+                                                                <span>ក្រុងពាលី</span>
                                                                 <span>ពិធីកាត់សក់បង្កក់សិរី</span>
-                                                                <span>ពិធីសំពះផ្ទឹម</span>
-                                                                <span>ពិធីចាក់ទឹកតែ</span>
-                                                                <span>អញ្ជើញភ្ញៀវពិសាអាហារថ្ងៃត្រង់</span>
+                                                                <span>ពិធីសូត្រមន្តចម្រើនព្រះបរិត្ត</span>
+                                                                <span>ពិធីកាត់ខាន់ស្លា</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -360,39 +336,24 @@
 
                                                     <div
                                                         class=" event-wrap animate-box justify-content-center align-items-center">
-                                                        <h3>ថ្ងៃសៅរ៍ ទី៣១ ខែមករា ឆ្នាំ២០២៦
+                                                        <h3 style="font-weight: bold;">ថ្ងៃសៅរ៍ ទី៣១ ខែមករា ឆ្នាំ២០២៦
                                                         </h3>
 
                                                         <div class="event-schedule">
                                                             <div class="event-col times" style="text-align: left;">
-                                                                <span>⊳ ម៉ោង ០៧:០០ ព្រឹក</span>
-                                                                <span>⊳ ម៉ោង ០៨:០០ ព្រឹក</span>
-                                                                <span>⊳ ម៉ោង ០៨:៣០ ព្រឹក</span>
-                                                                <span>⊳ ម៉ោង ០៩:០០ ព្រឹក</span>
-                                                                <span>⊳ ម៉ោង ១០:០០ ព្រឹក</span>
-                                                                <span>⊳ ម៉ោង ១១:០០ ថ្ងៃត្រង់</span>
-                                                                <span>⊳ ម៉ោង ១១:៣០ ថ្ងៃត្រង់</span>
-                                                                <span>⊳ ម៉ោង ១២:០០ ថ្ងៃត្រង់</span>
+                                                                <span>⊳ ម៉ោង ០៥:៣០ ព្រឹក</span>
+                                                                <span>⊳ ម៉ោង ០៧:១៥ ព្រឹក</span>
+                                                                <span>⊳ ម៉ោង ១០:៣០ ព្រឹក</span>
+                                                                <span>⊳ ម៉ោង ០៥:០០ ល្ងាច</span>
                                                             </div>
 
                                                             <div class="event-col events" style="text-align: left;">
-                                                                <span>ពិធីហែជំនូន</span>
-                                                                <span>ពិធីបំពាក់ចិញ្ចៀន</span>
-                                                                <span>ពិធីជាវខាន់ស្លា</span>
-                                                                <span>ពិធីប៉ាយកុងម៉ា</span>
-                                                                <span>ពិធីកាត់សក់បង្កក់សិរី</span>
-                                                                <span>ពិធីសំពះផ្ទឹម</span>
-                                                                <span>ពិធីចាក់ទឹកតែ</span>
-                                                                <span>អញ្ជើញភ្ញៀវពិសាអាហារថ្ងៃត្រង់</span>
+                                                                <span>យកពិលា</span>
+                                                                <span>ពិធីសំពះផ្ទឹមសែនចងដៃ</span>
+                                                                <span>ប៉ាយកុងម៉ា</span>
+                                                                <span>ចូលរួមពិសាភោជនាហារពេលល្ងាច</span>
                                                             </div>
                                                         </div>
-
-                                                        <!-- <p>
-                                                            វេលាម៉ោង ០៥:00 រសៀល
-                                                            ៖អញ្ជើញភ្ញៀវពិសាភោជនាហារនៅគេហដ្ឋានខាងស្រី
-                                                            ភូមិក្រសាំងជ័យ
-                                                            ឃុំបារាយណ៍ ស្រុកបារាយណ៍ ខេត្តកំពង់ធំ ដោយមេត្រីភាព។ សូមអរគុណ!
-                                                        </p> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -551,7 +512,7 @@
                         </div>
 
                         <div class="container">
-                            <div class="row g-2 mt-1">
+                            <div class="row g-2 mt-1" data-aos="fade-right" data-aos-duration="1500">
                                 <div class="col-6 col-md-6">
                                     <div class="card top-card">
                                         <img src="./assets/images/mine/vertical1.webp"
@@ -567,7 +528,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-1 g-2">
+                            <div class="row mt-1 g-2" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="col-12">
                                     <div class="card bottom-card">
                                         <img src="./assets/images/mine/horizontal1.webp"
@@ -576,7 +537,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row g-2 mt-1">
+                            <div class="row g-2 mt-1" data-aos="fade-left" data-aos-duration="1500">
                                 <div class="col-6 col-md-6">
                                     <div class="card top-card">
                                         <img src="./assets/images/mine/vertical5.webp"
@@ -592,7 +553,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-1 g-2">
+                            <div class="row mt-1 g-2" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="col-12">
                                     <div class="card bottom-card">
                                         <img src="./assets/images/mine/horizontal3.webp"
@@ -601,7 +562,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-1 g-2">
+                            <div class="row mt-1 g-2" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="col-12">
                                     <div class="card bottom-card">
                                         <img src="./assets/images/mine/horizontal2.webp"
@@ -610,7 +571,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row g-2 mt-1">
+                            <div class="row g-2 mt-1" data-aos="fade-right" data-aos-duration="1500">
                                 <div class="col-6 col-md-6">
                                     <div class="card top-card">
                                         <img src="./assets/images/mine/vertical3.webp"
@@ -627,104 +588,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="container">
-                            <div class="border rounded-5 shadow p-3">
-
-                                <h2 class=" text-center py-2 m-0" style="font-size: 2.25rem;">កម្រងរូបភាពអនុស្សាវរីយ៍
-                                </h2>
-
-                                <div id="carousel-image-one" data-aos="fade-up" data-aos-duration="1500"
-                                    class="carousel slide mt-4" data-bs-ride="carousel">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="0"
-                                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                    </div>
-
-                                    <div class="carousel-inner rounded-4">
-                                        <div class="carousel-item active">
-                                            <img src="./assets/images/placeholder.webp"
-                                                data-src="https://picsum.photos/1280/720?random=1" alt="image 1"
-                                                class="d-block img-fluid cursor-pointer"
-                                                onclick="undangan.guest.modal(this)">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./assets/images/placeholder.webp"
-                                                data-src="https://picsum.photos/1280/720?random=2" alt="image 2"
-                                                class="d-block img-fluid cursor-pointer"
-                                                onclick="undangan.guest.modal(this)">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./assets/images/placeholder.webp"
-                                                data-src="https://picsum.photos/1280/720?random=3" alt="image 3"
-                                                class="d-block img-fluid cursor-pointer"
-                                                onclick="undangan.guest.modal(this)">
-                                        </div>
-                                    </div>
-
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carousel-image-one" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carousel-image-one" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-
-                                <div id="carousel-image-two" data-aos="fade-up" data-aos-duration="1500"
-                                    class="carousel slide mt-4" data-bs-ride="carousel">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carousel-image-two" data-bs-slide-to="0"
-                                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carousel-image-two" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carousel-image-two" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                    </div>
-
-                                    <div class="carousel-inner rounded-4">
-                                        <div class="carousel-item active">
-                                            <img src="./assets/images/placeholder.webp"
-                                                data-src="https://picsum.photos/1280/720?random=4" alt="image 4"
-                                                class="d-block img-fluid cursor-pointer"
-                                                onclick="undangan.guest.modal(this)">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./assets/images/placeholder.webp"
-                                                data-src="https://picsum.photos/1280/720?random=5" alt="image 5"
-                                                class="d-block img-fluid cursor-pointer"
-                                                onclick="undangan.guest.modal(this)">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./assets/images/placeholder.webp"
-                                                data-src="https://picsum.photos/1280/720?random=6" alt="image 6"
-                                                class="d-block img-fluid cursor-pointer"
-                                                onclick="undangan.guest.modal(this)">
-                                        </div>
-                                    </div>
-
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carousel-image-two" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carousel-image-two" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div> -->
 
                         <!-- <div class="overflow-x-hidden">
                             <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
@@ -780,8 +643,7 @@
                         <a href="https://maps.app.goo.gl/1RYMzLmNtivZLb9MA" target="_blank"
                             class="btn btn-outline-auto btn-sm rounded-pill shadow mb-2 px-3"><i
                                 class="fa-solid fa-map-location-dot me-2"></i>Google Map</a>
-                        <small class="d-block my-1">RT 10 RW 02, Desa Pajerukan, Kec. Kalibagor, Kab. Banyumas, Jawa
-                            Tengah 53191.</small>
+                        <small class="d-block my-1">ស្ថិតនៅភោជនីយដ្ឋាន លាភភា មង្គល ស្រុកថ្មគោល ខេត្តបាត់ដំបង <br> (លើបណ្តោយផ្លូវជាតិលេខ៥ ចម្ងាយ 6000ម ពីរង្វង់មូល)</small>
                     </div>
                 </section>
 
@@ -872,23 +734,23 @@
             </ul>
         </nav>
     </div>
-    </div>
+    <!-- </div> -->
 
     <!-- Welcome Page -->
     <div class="loading-page bg-white-black" id="welcome" style="opacity: 0;">
         <div class="d-flex justify-content-center align-items-center vh-100 overflow-y-auto">
             <div class="d-flex flex-column text-center">
-                <h2 class="font-secondary mb-4" style="font-size: 2.25rem;">សិរីសួស្តីពិធីមង្គលអាពាពិពាហ៍</h2>
+                <h2 class="font-secondary gold-text-color mb-4" style="font-size: 2.25rem;">សិរីសួស្តីពិធីមង្គលអាពាពិពាហ៍</h2>
 
                 <img src="./assets/images/placeholder.webp" data-src="./assets/images/bg.webp" alt="background"
                     class="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto">
 
-                <h2 class=" mb-4" style="font-size: 2.25rem;">TOLA &amp; PHINH</h2>
+                <img src="./assets/images/mine/name.svg" class="img-fluid mb-4 d-block mx-auto" style="width: 18rem;" alt="Name logo">
                 <div id="guest-name" data-message="Kepada Yth Bapak/Ibu/Saudara/i"></div>
 
                 <button type="button" class="btn btn-light shadow rounded-4 mt-3 mx-auto"
-                    onclick="undangan.guest.open(this)"><i class="fa-solid fa-envelope-open fa-bounce me-2"></i>Open
-                    Invitation</button>
+                    onclick="undangan.guest.open(this)"><i class="fa-solid fa-envelope-open fa-bounce me-2"></i>សូមចុចបើកសំបុត្រ
+                    </button>
             </div>
         </div>
     </div>

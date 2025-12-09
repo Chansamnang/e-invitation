@@ -125,12 +125,12 @@ svg {
 #eventTabs .nav-link:hover {
     background-color: rgba(241, 78, 149, 0.1);
     /* subtle pink hover */
-    color: #F14E95;
+    color: var(--gold-color);
     /* pink text on hover */
 }
 
 #eventTabs .nav-link.active {
-    background-color: #F14E95;
+    background-color: var(--gold-color);
     /* pink background for active tab */
     color: #fff !important;
     /* white text */
