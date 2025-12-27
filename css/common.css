@@ -1,7 +1,7 @@
 :root {
   --font-primary: 'Work Sans', Arial, sans-serif;
   --font-secondary: 'Moulpali', 'Sacramento', Arial, serif;
-  --gold-color: #C78A2C;
+  --gold-color: #a18c22 ;
 }
 
 
@@ -16,6 +16,20 @@ body {
     width: 100% !important;
     overflow-x: hidden !important;
 }
+
+/* html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+section, main {
+  overflow-x: hidden;
+} */
 
 i {
     width: auto !important;
@@ -105,12 +119,12 @@ html[data-bs-theme="light"] .btn-outline-auto {
 
 html[data-bs-theme="dark"] .bg-overlay-auto {
     background-color: rgba(var(--bs-black-rgb), 0.5);
-    backdrop-filter: blur(0.25rem);
+    /* backdrop-filter: blur(0.25rem); */
 }
 
 html[data-bs-theme="light"] .bg-overlay-auto {
     background-color: rgba(var(--bs-white-rgb), 0.5);
-    backdrop-filter: blur(0.25rem);
+    /* backdrop-filter: blur(0.25rem); */
 }
 
 .hover-area {
@@ -154,93 +168,10 @@ html[data-bs-theme="light"] .bg-overlay-auto {
   font-family: 'Moulpali';
   position: relative;
   display: inline-block;
-  color: #C78A2C;
+  color: var(--gold-color);
   font-size: 28px;
   text-transform: uppercase;
   animation: waviy 2s infinite;
   animation-delay: calc(.1s * var(--i));
   
 }
-
-/* #fh5co-counter,
-#fh5co-event {
-	height: 850px;
-	float: left;
-	.display-t,
-	.display-tc {
-		height: 700px;
-		display: table;
-		width: 100%;
-	}
-	.fh5co-heading{
-		h2{
-			color: $brand-white;
-		}
-		span{
-			color: rgba($brand-white,.5);
-			text-transform: uppercase;
-			font-size: 13px;
-			letter-spacing: 2px;
-			font-weight: 600;
-		}
-	}
-	.overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: rgba(0, 0, 0, .4);
-	}
-	@media screen and (max-width: $screen-sm) {
-		height: inherit;
-		padding: 7em 0;
-		.display-t,
-		.display-tc {
-			height: inherit;
-		}
-	}
-
-	.event-wrap{
-		border: 2px solid rgba($brand-white,.5);
-		background:rgba($brand-white,.1);
-		padding: 30px;
-		width: 100%;
-		float: left;
-		@include border-radius(4px);
-		@media screen and (max-width: $screen-sm) {
-			margin-bottom: 10px;
-		}
-		h3{
-			font-size: 20px;
-			color: $brand-white;
-			border-bottom: 1px solid rgba($brand-white,.5);
-			display: block;
-			padding-bottom: 20px;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-		}
-		p,span{
-			display: block;
-			color: rgba($brand-white,.8);
-		}
-		i{
-			color: rgba($brand-white,1);
-			font-size: 20px;
-		}
-		.event-col{
-			width: 50%;
-			float: left;
-			margin-bottom: 30px;
-		}
-	}
-
-}
-
-
-#fh5co-counter{
-	height: 600px;
-	@media screen and (max-width: $screen-sm) {
-		height: auto;
-	}
-} */
