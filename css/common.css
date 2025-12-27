@@ -4,6 +4,13 @@
   --gold-color: #a18c22 ;
 }
 
+#root {
+    background-image: url('../assets/images/mine/back.jpg');
+    background-color: var(--white-color);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed; /* Optional: keeps background fixed while scrolling */
+}
 
 html {
     scroll-behavior: smooth !important;
