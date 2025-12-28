@@ -4,7 +4,7 @@
   --gold-color: #a18c22 ;
 }
 
-#root {
+.background-smartphone-view {
     background-image: url('../assets/images/mine/back.jpg');
     background-color: var(--white-color);
     background-size: cover;
@@ -24,7 +24,7 @@ body {
     overflow-x: hidden !important;
 }
 
-/* html, body {
+html, body {
   width: 100%;
   overflow-x: hidden;
 }
@@ -36,7 +36,7 @@ svg {
 
 section, main {
   overflow-x: hidden;
-} */
+}
 
 i {
     width: auto !important;
