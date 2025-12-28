@@ -5,11 +5,20 @@
 }
 
 .background-smartphone-view {
+       position: relative;
+    overflow: hidden;
+
+}
+
+.background-smartphone-view::before {
+    content: "";
+    position: fixed;
+    inset: 0;
     background-image: url('../assets/images/mine/back.jpg');
     background-size: cover;
-    background-repeat: repeat;
-    background-position: top center;
-    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 html {
