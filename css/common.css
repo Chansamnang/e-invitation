@@ -5,9 +5,8 @@
 }
 
 .background-smartphone-view {
-       position: relative;
+    position: relative;
     overflow: hidden;
-
 }
 
 .background-smartphone-view::before {
@@ -15,6 +14,22 @@
     position: fixed;
     inset: 0;
     background-image: url('../assets/images/mine/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.background-smartphone-welcome-page-view {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-smartphone-welcome-page-view::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('../assets/images/mine/front.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
