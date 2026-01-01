@@ -79,6 +79,41 @@ export const audio = (() => {
 
         music.addEventListener('offline', pause);
         music.addEventListener('click', () => isPlay ? pause() : play());
+
+        // YouTube video integration
+        let player;
+        
+        // YouTube IFrame API ready callback
+        window.onYouTubeIframeAPIReady = function() {
+            player = new YT.Player('ytPlayer', {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        };
+
+        // Handle YouTube player state changes
+        function onPlayerStateChange(event) {
+            // When video starts playing (state = 1)
+            if (event.data === YT.PlayerState.PLAYING) {
+                pause(); // Pause the background music
+            }
+            // When video is paused or ended (state = 2 or 0)
+            else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
+                if (playOnOpen) {
+                    play(); // Resume background music
+                }
+            }
+        }
+
+        // If YouTube API is already loaded, initialize player
+        if (window.YT && window.YT.Player) {
+            player = new YT.Player('ytPlayer', {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
     };
 
     /**
